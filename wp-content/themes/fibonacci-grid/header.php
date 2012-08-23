@@ -84,20 +84,21 @@
 <body <?php body_class(); ?>>
 	
 	<!-- Start the main container -->
-	<div class="container clearfix" role="document">
+	<div class="container" role="document">
 	
 		
 		<!-- Row for blog navigation -->
 			<header class="header-ribbon" role="banner">
+			
+			<div class="nav-ribbon column(9) push(2)">
 			<ul>
 				<li class="left"><h4>Home</h4></li>
 				<li class="left"><h4>Articles</h4></li>
 			</ul>
-				
+			</div	
 				
 					
 			</header>
-	</div>
 		
 		
 		<!-- Row for main content area -->
