@@ -24,11 +24,6 @@ add_action('after_setup_theme', 'fibonacci_setup');
 function fibonacci_css() {
   if ( !is_admin() ) {
   
-     wp_register_style( 'foundation',get_template_directory_uri() . '/css/foundation.css', false );
-     wp_enqueue_style( 'foundation' );
-    
-     wp_register_style( 'app',get_template_directory_uri() . '/css/app.css', false );
-     wp_enqueue_style( 'app' );
      
      // Load style.css to allow contents overwrite foundation & app css
      wp_register_style( 'style',get_template_directory_uri() . '/style.css', false );
@@ -36,6 +31,7 @@ function fibonacci_css() {
      
      wp_register_style( 'google_font',"http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300", false );
      wp_enqueue_style( 'google_font' );
+     
      
   }
 }  
